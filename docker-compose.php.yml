@@ -1,0 +1,10 @@
+version: '3.7'
+
+services:
+  php:
+    image: php:7.3-cli
+    volumes:
+      - .:/var/www
+    env_file: .env
+    tty: true
+    stdin_open: true
